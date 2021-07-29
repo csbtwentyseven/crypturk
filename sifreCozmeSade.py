@@ -43,7 +43,7 @@ class Kir():
         tc = 0  # ilk durak tespit degiskeni
 
         for i in parcasade:
-            if ((i == "T" or i == "C")):  # durak tespti
+            if ((i == "☾" or i == "☪")):  # durak tespti
                 if (tc == 0):  # ilk durak tespiti
                     dosyaYaz.write(parcasade[j - 2] + parcasade[j - 1])  # ilk durağın solundaki iki sayıyı yazıyor.
                     tc = 1  # ilk duraktan sonra degiskeni degistirerek ilk duragı isaretliyor.
@@ -126,8 +126,53 @@ class Eslestir():
                    "57": "7",
                    "58": "8",
                    "59": "9",
-                   "95":" \n "
-
+                   "95":" \n ",
+                   "61":"q",
+                   "62":"w",
+                   "96":"\\",
+                   "98":"x",
+                   "99":"A",
+                   "I9":"B",
+                   "I8":"C",
+                   "I7":"Ç",
+                   "I6":"D",
+                   "I5":"E",
+                   "I4":"F",
+                   "I3":"G",
+                   "I2":"Ğ",
+                   "I1":"H",
+                   "I0":"I",
+                   "M9":"İ",
+                   "M8":"J",
+                   "M7":"K",
+                   "M6":"L",
+                   "M5":"M",
+                   "M4":"N",
+                   "M3":"O",
+                   "M2":"Ö",
+                   "M1":"P",
+                   "M0":"R",
+                   "G9":"S",
+                   "G8":"Ş",
+                   "G7":"T",
+                   "G6":"U",
+                   "G5":"Ü",
+                   "G4":"V",
+                   "G3":"Y",
+                   "G2":"Z",
+                   "G1":"W",
+                   "G0":"X",
+                   "J9":"Q",
+                   "J8":"=",
+                   "J7":"`",
+                   "J6":"#",
+                   "J5":"_",
+                   "J4":"^",
+                   "C9":"|",
+                   "C8":"&",
+                   "C7":"[",
+                   "C6":"]",
+                   "C1":"~",
                    }  # latin - osmanlı alfabe karşılığı
 
     def sayidanharf():
@@ -162,3 +207,4 @@ def decrypt(sifrelenmisMetin):
             raise SyntaxError
         dosya_oku = open("duz_metin.txt","r")
         return dosya_oku.read()
+
