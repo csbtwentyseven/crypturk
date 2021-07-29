@@ -73,6 +73,8 @@ class Sifre():
                    "v": 31,
                    "y": 36,
                    "z": 11,
+                   "q":"G1",
+                   "w":"G2",
                    "T": "T",
                    "C": "C",
                    " ": 1453,
@@ -112,6 +114,60 @@ class Sifre():
                    "<": 93,
                    '"': 94,
                    "\n":95,
+                   "\\":96,
+                   "x":98,
+                   "A":99,
+                   "B":100,
+                   "C":101,
+                   "Ç":102,
+                   "D":103,
+                   "E":104,
+                   "F":205,
+                   "G":206,
+                   "Ğ":207,
+                   "H":208,
+                   "I":209,
+                   "İ":210,
+                   "J":211,
+                   "K":212,
+                   "L":213,
+                   "M":366,
+                   "N":367,
+                   "O":368,
+                   "Ö":369,
+                   "P":370,
+                   "R":875,
+                   "S":880,
+                   "Ş":885,
+                   "T":890,
+                   "U":895,
+                   "Ü":898,
+                   "V":900,
+                   "Y":901,
+                   "Z":903,
+                   "W":905,
+                   "X":906,
+                   "Q":918,
+                   "=":907,
+                   "`":908,
+                   "#":909,
+                   "(":910,
+                   ")":911,
+                   "{":912,
+                   "}":913,
+                   "_":914,
+                   "^":915,
+                   "|":916,
+                   "&":917,
+                   "[":920,
+                   "]":921,
+                   "~":932,
+
+
+
+
+
+                
 
                    }  # latin - osmanlı alfabe karşılığı
 
@@ -169,7 +225,7 @@ def sifirla():#hash.txt dosyasında önceki işlemlerden kalma şifreler varsa t
 def encrypt(metin):
     global csb
     sifirla()#hash.txt dosyasında önceki işlemlerden kalma şifreler varsa temizler.
-    csb = metin.lower()  # inputu alıp küçük harflere döker.
+    csb = metin  # inputu alıp küçük harflere döker.
 
 
     return Sifre.output()
